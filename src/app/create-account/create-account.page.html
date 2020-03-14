@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>create-account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>Create Account</h2>
+  <ion-item>
+    <ion-label stacked>Email:</ion-label>
+    <ion-input type="text" #user></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Password:</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+  <button ion-button block (click)="create()">Create</button>
+</ion-content>
