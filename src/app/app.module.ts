@@ -11,6 +11,7 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { AngularFireModule } from "angularfire2";
 import { AngularFireAuthModule } from "angularfire2/auth";
+import { WordpressService } from "src/service/wordpress.service";
 
 const firebaseAuth = {};
 
@@ -27,6 +28,7 @@ const firebaseAuth = {};
   providers: [
     StatusBar,
     SplashScreen,
+    WordpressService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
